@@ -1,0 +1,91 @@
+.primary-bg{
+    background-color: #130f40;
+}
+.primary-text{
+    color: #130f40;
+}
+.secondary-bg{
+    background-color: #c1efde;
+}
+.second-text{
+    color: #9498a0;
+}
+.rounded-full{
+    border-radius: 100%;
+}
+.bg-lightgray{
+    background-color: lightgray;
+}
+.bg-admindark{
+    background-color: #130f40;
+}
+#wrapper{
+    overflow-x: hidden;
+    background-image: linear-gradient(
+        to right,
+        rgb(141, 245, 141),
+        rgb(164, 248, 164),
+        rgb(185, 250, 185),
+        rgb(209, 245, 209),
+        rgb(255, 255, 255),
+    );
+}
+
+#sidebar-wrapper{
+    min-height: 100vh;
+    margin-left: -15rem;
+    transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading{
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group{
+    width: 15rem;
+}
+
+#page-content-wrapper{
+    min-width: 100vw;
+}
+
+#wrapper-toggled #sidebar-wrapper{
+    margin-left: 0;
+}
+
+#menu-toggle{
+    cursor: pointer;
+}
+
+.list-group-item{
+    border: none;
+    padding: 20px 30px;
+}
+
+.list-group-item .activebar{
+    background-color: lightgray;
+    color: #130f40;
+    font-weight: bold;
+    border: none;
+}
+
+#sidebarlinks a:hover{
+    font-size: large;
+    font-weight: 600;
+}
+#adminaccDrop li:hover{
+    font-size: 1.1rem;
+}
+@media (min-width:768px){
+    #sidebar-wrapper{
+        margin-left: 0;
+    }
+    #page-content-wrapper{
+        min-width: 0;
+        width: 100%;
+    }
+    #wrapper.toggled #sidebar-wrapper{
+        margin-left: -15rem;
+    }
+}
